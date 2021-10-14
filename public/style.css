@@ -1,0 +1,38 @@
+body{
+    background-color: whitesmoke;
+    
+}
+.container{
+    align-items: center;
+    display: flex;
+    position: left;
+
+}
+.nav-icon{
+    width: 60px;
+    border-radius: 15px;
+
+}
+
+.navbar-toggler-icon{
+    opacity: 100;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.d-block{
+   align-items: center;
+   padding-left: 400px;
+   padding-top: 100px;
+   width: 900px;
+}
+.etiqueta{
+    color: black;
+    text-align: center;
+    padding-right: 60px;
+    font-style: oblique;
+
+}
+.icon{
+    width: 10px;
+    height: 15px;
+}
+
