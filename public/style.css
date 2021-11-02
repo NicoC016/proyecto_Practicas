@@ -36,3 +36,11 @@ body{
     height: 15px;
 }
 
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding-left: 180px;
+    padding-bottom: 50px;
+    padding-right: 200px;
+    
+}

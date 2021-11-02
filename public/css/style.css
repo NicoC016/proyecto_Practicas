@@ -1,0 +1,102 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  max-width: 100vw!important;
+  max-height: 100vh!important;
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190619/ourmid/pngtree-shopping-mall-supermarket-selection-merchandise-poster-background-material-image_133225.jpg);
+  background-size: 90rem;
+}
+/* @keyframes etiqueta1 {
+  from {background-color:gray;}
+  to {background-color: black;}
+
+}
+.titlulo1{
+  text-align: center;
+  font-size: 60px;
+  font-family: monospace;
+  color: #fff;
+  margin-top: 455px;
+  animation-name: etiqueta1;
+  animation-duration: 3s;
+  background-color: rgb(111, 123, 128);
+  animation-iteration-count: infinite;
+  border-radius: 40px;
+
+} */
+.navbar-nav{
+  color: #fff;
+}
+
+.nav-icon {
+  width: 50px;
+}
+
+.primary-btn {
+  background-color: #6cc24a;
+  color: black;
+}
+
+.form-label{
+  height: 30px;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  color: black;
+}
+
+.primary-btn:hover {
+  background-color: transparent;
+  border-color: #6cc24a;
+  color: #6cc24a;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border-color: #6cc24a;
+  color: #6cc24a;
+}
+
+.secondary-btn:hover {
+  background-color: #6cc24a;
+  color:black;
+}
+
+.edit-btn {
+  background-color: yellow;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f72828;
+  color: #fff;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#message-div {
+  border: 2px solid lightgrey;
+  background-color: #f8f9fa;
+  padding: 30px;
+}
+.titulo{
+  color:black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  
+}
+a{
+  text-decoration: none;
+  color:black;
+  padding-left: 10px;
+
+}

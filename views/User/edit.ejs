@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supermercado</title>
+  <link rel="shortcut icon" href="img/carrito.jpg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="./"><img src="img/carrito.jpg" alt="Node.js icon" class="nav-icon"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./add">Agregar usuario</a>
+          </li>
+        </ul>
+        <form class="d-flex" action="./search" method="GET">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" name="search">
+          <button class="btn secondary-btn" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <div class="container">
+    <div class="text-center">
+      <h2>Tabla de usuario</h2>
+    </div>
+    <br>
+    <form action="./edit-user" method="POST">
+      <input type="hidden" name="id" value="<%= user.id %>">
+      <div class="row">
+        <div class="col-12">
+          <label for="username" class="form-label">Nombre</label>
+          <input type="text" name="username" id="username" class="form-control" value="<%= user.username %>">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="text" name="email" id="email" class="form-control" value="<%= user.email %>">
+        </div>
+        <div class="col-6">
+          <label for="phone" class="form-label">telefono</label>
+          <input type="text" name="phone" id="phone" class="form-control" value="<%= user.phone %>">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-6">
+          <label for="city" class="form-label">ciudad</label>
+          <input type="text" name="city" id="city" class="form-control" value="<%= user.city %>">
+        </div>
+        <div class="col-6">
+          <label for="state" class="form-label">Estado</label>
+          <select name="state" id="state" class="form-select">
+            <option value="<%= user.state %>" selected>
+              <%= user.estado %>
+            </option>
+            <option value="AC">Villa Nueva</option>
+            <option value="AL">Ciudad</option>
+            <option value="AP">Ortega</option>
+            <option value="AM">Cruz de piedra</option>
+            <option value="BA">Russel</option>
+            <option value="CE">Fray luis Beltrán</option>
+            <option value="DF">Dorrego</option>
+            <option value="ES">Gutierrez</option>
+            <option value="GO">Rodeo De la Cruz</option>
+            <option value="MA">Junin</option>
+            <option value="MT">Coquimbito</option>
+            <option value="MS">Maipú</option>
+            <option value="MG"> San Roque</option>
+            <option value="PA">Palmira</option>
+            <option value="PB">San Martin</option>
+            <option value="PR">San Carlos</option>
+            <option value="PE">Rivadavia</option>
+            <option value="PI">San Rafael</option>
+            <option value="RJ">La paz</option>
+            <option value="RN">Santa Rosa</option>
+            <option value="RS">Lujan de Cuyo</option>
+            <option value="RO">Godoy Cruz</option>
+            <option value="RR">General Alvear</option>
+            <option value="SC">Tunuyan</option>
+            <option value="SP">Tupungato</option>
+            <option value="SE">Uspallata</option>
+            <option value="TO">Las Heras</option>
+          </select>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-6">
+          <div class="float-start">
+            <button type="submit" class="btn primary-btn">Actualizar el Usuario</button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="float-end">
+            <a href="./" class="btn secondary-btn">Volver al Inicio</a>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
