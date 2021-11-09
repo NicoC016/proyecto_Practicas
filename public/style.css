@@ -1,13 +1,15 @@
 body{
-    background-color: whitesmoke;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190619/ourmid/pngtree-shopping-mall-supermarket-selection-merchandise-poster-background-material-image_133225.jpg);
     
 }
 .container{
     align-items: center;
     display: flex;
     position: left;
+    border: 1rem black;
 
 }
+
 .nav-icon{
     width: 60px;
     border-radius: 15px;

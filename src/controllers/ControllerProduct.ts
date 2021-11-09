@@ -10,7 +10,7 @@ import {ProductService } from "../services/serviceProduct";
 
 class Products {
     async CreateProduct(request: Request, response: Response) {
-        const {  id ,name, cost, type, category_id} = request.body;
+        const {  id ,name, cost, type} = request.body;
       
         const createProductService = new ProductService();
       
@@ -19,8 +19,7 @@ class Products {
             id,
             name,
             cost,
-            type,
-            category_id 
+            type 
 
           }).then(() => {
             response.render("Product/message", {
@@ -104,12 +103,12 @@ class Products {
     }
 
     async handleProduct(request: Request, response: Response) {
-      const { id, name, cost, type, category_id } = request.body;
+      const { id, name, cost, type } = request.body;
   
       const updateProductService = new ProductService();
   
       try {
-        await updateProductService.update({ id, name, cost, type, category_id }).then(() => {
+        await updateProductService.update({ id, name, cost, type }).then(() => {
           response.render("Product/message", {
             message: "Usuario actualizado con exito"
           });

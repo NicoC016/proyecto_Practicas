@@ -9,12 +9,12 @@ interface IProduct {
     name: string;
     cost: number;
     type: "varchar";
-    category_id: Category;
+    
 }
 
 class ProductService {
-    async create({  name, cost, type, category_id }: IProduct) {
-      if (!name || !cost || !type||!category_id) {
+    async create({  name, cost, type }: IProduct) {
+      if (!name || !cost || !type) {
         throw new Error("Por favor revise todos los campos");
       }
   
@@ -78,7 +78,7 @@ class ProductService {
     }
 
 
-    async update({ id, name, cost, type, category_id}: IProduct) {
+    async update({ id, name, cost, type}: IProduct) {
       const productRepository = getCustomRepository(ProductRepository);
   
       const product = await productRepository

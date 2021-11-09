@@ -28,7 +28,14 @@ body {
 }
 
 .nav-icon {
-  width: 50px;
+  width: 70px;
+}
+
+.carousel-item{
+  width: 700px;
+  height: 700px;
+  left: 20rem;
+  top: 5rem;
 }
 
 .primary-btn {
